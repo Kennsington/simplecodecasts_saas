@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
-  root 'pages#home'
+  get  '/about' => 'pages#about'
+  root 'pages#home' #routes to pages controller and home action.
+  #It then knows to go to the pages folder and pull up the home.html.erb page.
+  
+  
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
