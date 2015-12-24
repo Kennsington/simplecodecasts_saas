@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  
   resources :contacts
   get  '/about' => 'pages#about'
   root 'pages#home' #routes to pages controller and home action.
