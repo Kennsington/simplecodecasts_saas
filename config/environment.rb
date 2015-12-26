@@ -9,7 +9,11 @@ ActionMailer::Base.stmp_settings = {
     :port => '587',
     :authentication => :plain,
 <<<<<<< HEAD
+<<<<<<< HEAD
     :user_name => ENV['SENDGRID_USERNAME'],
+=======
+    :username => ENV['SENDGRID_USERNAME'],
+>>>>>>> e8675bf0f1dbf1bcbff087fe1927c6a7cf84d09a
 =======
     :username => ENV['SENDGRID_USERNAME'],
 >>>>>>> e8675bf0f1dbf1bcbff087fe1927c6a7cf84d09a
