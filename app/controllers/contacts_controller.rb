@@ -1,4 +1,5 @@
 class ContactsController < ApplicationController
+  require 'resolv-replace'
   def new
     @contact = Contact.new
   end
@@ -10,7 +11,7 @@ class ContactsController < ApplicationController
       email = params[:contact][:email]
       body = params[:contact][:comments]
       
-      ContactMailer.contact_email(name, email, body).deliver #look at contact_mailer file and run the contact_ email method
+      ContactMailer.contact_email(name, email, body).deliver
       flash[:success] = "Message sent."
       redirect_to new_contact_path
       
