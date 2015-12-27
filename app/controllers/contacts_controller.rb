@@ -1,5 +1,4 @@
 class ContactsController < ApplicationController
-  require 'resolv-replace'
   def new
     @contact = Contact.new
   end
