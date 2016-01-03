@@ -1,8 +1,7 @@
 Rails.application.routes.draw do
-  
-  devise_for :users
+  devise_for :users, controllers: { registrations: 'users/registrations' }
   resources :contacts
-  get  '/about' => 'pages#about'
+  get '/about' => 'pages#about'
   root 'pages#home' #routes to pages controller and home action.
   #It then knows to go to the pages folder and pull up the home.html.erb page.
   
