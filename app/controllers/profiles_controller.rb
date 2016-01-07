@@ -16,6 +16,11 @@ class ProfilesController < ApplicationController
         end
     end
     
+    def edit
+         @user = User.find( params[:user_id] )
+         @profile = @user.profile
+    end
+    
     private
     #Necessary to whiteist arguments that make up the profile paramaters
         def profile_params
